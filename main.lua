@@ -346,7 +346,7 @@ local loaded = 0
 local failed = 0
 task.spawn(function()
     for i = 1, TOTAL do
-        local url = BASE_URL .. "s" .. i .. ".json"
+        local url = BASE_URL .. i .. ".json"
         local ok, raw = pcall(function()
             return game:HttpGet(url)
         end)
