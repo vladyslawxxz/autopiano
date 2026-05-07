@@ -14,7 +14,7 @@ local TEXT    = Color3.fromRGB(230, 230, 235)
 local SUBTEXT = Color3.fromRGB(140, 140, 155)
 local CR      = UDim.new(0, 10)
 local CS      = UDim.new(0, 6)
-local BASE_URL = "https://raw.githubusercontent.com/vladyslawxxz/autopiano/refs/heads/main/"
+local BASE_URL = "https://raw.githubusercontent.com/vladyslawxxz/autopiano/refs/heads/main/songs/"
 local TOTAL    = 20
 local function corner(p, r)
     local c = Instance.new("UICorner"); c.CornerRadius = r or CR; c.Parent = p; return c
