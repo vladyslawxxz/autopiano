@@ -348,7 +348,7 @@ task.spawn(function()
     for i = 1, TOTAL do
         local url = BASE_URL .. "s" .. i .. ".json"
         local ok, raw = pcall(function()
-            return game:GetService("HttpService"):GetAsync(url)
+            return game:HttpGet(url)
         end)
         if ok and raw then
             local jOk, data = pcall(function()
